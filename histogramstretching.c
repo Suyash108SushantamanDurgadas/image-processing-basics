@@ -27,7 +27,7 @@ int main(){
     float str_image[5][5];
     for(int i=0;i<row;i++){
         for(int j=0;j<col;j++){
-            str_image[i][j]=(mul_factor*(image[i][j]-r_min)) - s_min;
+            str_image[i][j]=(mul_factor*(image[i][j]-r_min)) + s_min;
         }
     }
     
