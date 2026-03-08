@@ -10,7 +10,6 @@ int main(){
     int row=5;
     int col=5;
     int image[5][5]={{1,3,4,5,4},{2,3,4,1,4},{2,3,4,5,5},{1,2,3,2,1},{3,4,5,2,1}};
-    //Max pixel values in the image...to be calculated but first initialized to 0.
     int r_max=0;
     int r_min=0;
     
@@ -64,7 +63,7 @@ int getmaxpixelval(int image[][5], int row, int col){
     int maxval=max[0];
     for(int i=0;i<row;i++){
         if(max[i]>maxval){
-            max[i]=maxval;
+            maxval=max[i];
         }
     }
     return maxval;
@@ -83,7 +82,7 @@ int getminpixelval(int image[][5], int row, int col){
     int minval=min[0];
     for(int i=0;i<row;i++){
         if(min[i]<minval){
-            min[i]=minval;
+            minval=min[i];
         }
     }
     return minval;
